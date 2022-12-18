@@ -41,9 +41,14 @@ There were eight annotators who contributed to the annotation process. They are 
 7. Wilda Nurjannah
 8. William Santoso
 
-<!-- ## Verification Stage
-We found many named entity candidates during the annotation stage. To verify the candidates, we consulted Quran's tafseer (content) experts as follows:
-1.  -->
+## Verification Stage
+We found many named entity and class candidates during the annotation stage. To verify the candidates, we consulted Quran and Tafseer (content) experts as follows:
+1. Dr. Lilik Ummi Kultsum, MA
+2. Dr. Jauhar Azizy, MA
+3. Dr. Eva Nugraha, M.Ag.
+
+## Evaluation
+We evaluated the annotation quality of IndQNER by performing experiments in two settings: supervised learning (BiLSTM+CRF) and transfer learning ([IndoBERT](https://huggingface.co/indobenchmark/indobert-base-p1}) fine-tuning). The first model obtained an F1 score of 0.95 and the second one yielded an F1 score of 0.64
 
 This dataset is also a part of [NusaCrowd project](https://github.com/IndoNLP/nusa-crowd) that aims to collect Natural Language Processing (NLP) datasets for the Indonesian languages.
 
