@@ -4,7 +4,7 @@ This model is used to predict named entities in Indonesian text utilizing the Bi
 ## Datasets
 The model uses datasets splitted into training, validation, and test sets in 8:1:1 ratio. The datasets use BIO (Beginning-Inside-Outside) tagging format.
 The first column refers to words and the second column represents named entity classes. These are some examples:
-
+'''
 Jika	O
 kamu	O
 (	O
@@ -46,8 +46,10 @@ orang-orang	O
 yang	O
 benar	O
 .	O
-
+'''
 ## How to run
 Training and test steps can be performed at the same time using this syntax:
+'''
 python ner.py --do_train True     --do_eval True     --do_test True     --max_seq_length 25  --train_batch_size 8     --eval_batch_size 8     --num_train_epochs 10     --do_lower_case     --logging_steps 200     --need_birnn True     --rnn_dim 256     --clean True
+'''
 
