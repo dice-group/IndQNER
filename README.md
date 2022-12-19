@@ -31,7 +31,7 @@ The initial categories were updated based on the information acquired during the
 20. The book of Allah
 
 ## Annotation Stage
-There were eight annotators who contributed to the annotation process. They are Informatics Engineering students at the Islamic State University of Syarif Hidayatullah Jakarta. 
+There were eight annotators who contributed to the annotation process. They are Informatics Engineering students at the State Islamic University Syarif Hidayatullah Jakarta. 
 1. Anggita Maharani Gumay Putri
 2. Muhammad Destamal Junas
 3. Naufaldi Hafidhigbal
@@ -42,7 +42,7 @@ There were eight annotators who contributed to the annotation process. They are 
 8. William Santoso
 
 ## Verification Stage
-We found many named entity and class candidates during the annotation stage. To verify the candidates, we consulted Quran and Tafseer (content) experts as follows:
+We found many named entity and class candidates during the annotation stage. To verify the candidates, we consulted Quran and Tafseer (content) experts who are lecturers at Quran and Tafseer Department, the State Islamic University Syarif Hidayatullah Jakarta.
 1. Dr. Lilik Ummi Kultsum, MA
 2. Dr. Jauhar Azizy, MA
 3. Dr. Eva Nugraha, M.Ag.
