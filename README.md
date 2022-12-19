@@ -7,9 +7,9 @@ The dataset contains:
 * 2476 named entities
 * 18 named entity categories
 
-## Named Entity Categories
-The named entity categories were initially defined by analyzing [the existing Quran concepts ontology](https://corpus.quran.com/concept.jsp).
-The initial categories were updated based on the information acquired during the annotation process. These are the 18 categories:
+## Named Entity Classes
+The named entity classes were initially defined by analyzing [the existing Quran concepts ontology](https://corpus.quran.com/concept.jsp).
+The initial classes were updated based on the information acquired during the annotation process. Finally, there are 20 classes as follows:
 1. Allah
 2. Allah's Throne
 3. Artifact
