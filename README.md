@@ -49,7 +49,7 @@ We found many named entity and class candidates during the annotation stage. To 
 3. Dr. Eva Nugraha, M.Ag.
 
 ## Evaluation
-We evaluated the annotation quality of IndQNER by performing experiments in two settings: supervised learning (BiLSTM+CRF) and transfer learning ([IndoBERT](https://huggingface.co/indobenchmark/indobert-base-p1}) fine-tuning). The first model obtained an F1 score of 0.95 and the second one yielded an F1 score of 0.64
+We evaluated the annotation quality of IndQNER by performing experiments in two settings: supervised learning (BiLSTM+CRF) and transfer learning ([IndoBERT](https://huggingface.co/indobenchmark/indobert-base-p1) fine-tuning). The first model obtained an F1 score of 0.95 and the second one yielded an F1 score of 0.64
 
 This dataset is also a part of [NusaCrowd project](https://github.com/IndoNLP/nusa-crowd) that aims to collect Natural Language Processing (NLP) datasets for the Indonesian languages.
 
