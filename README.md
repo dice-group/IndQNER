@@ -60,7 +60,6 @@ We evaluated the annotation quality of IndQNER by performing experiments in two 
 |512|20|0.62|0.57|0.58|
 |512|40|0.72|0.66|0.67|
 |512|100|0.68|0.68|0.67|
-|-----------------------|----------------|---------|------|--------|
 
 This dataset is also a part of [NusaCrowd project](https://github.com/IndoNLP/nusa-crowd) that aims to collect Natural Language Processing (NLP) datasets for the Indonesian languages.
 
