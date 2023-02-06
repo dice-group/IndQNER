@@ -56,7 +56,7 @@ The implementation of Bi-LSTM and CRF utilized [IndoBERT](https://huggingface.co
 
 ### Transfer Learning Setting
 We performed several experiments with different parameters in IndoBERT fine-tuning. All experiments used learning rate of 2e-5 and batch size of 16. These are the results:
-|Maximum sequence length|number of e-poch|Precision|Recall|F1 score|
+|Maximum sequence length|Number of e-poch|Precision|Recall|F1 score|
 |-----------------------|----------------|---------|------|--------|
 |256|10|0.67|0.65|0.65|
 |256|20|0.60|0.59|0.59|
