@@ -54,6 +54,7 @@ We evaluated the annotation quality of IndQNER by performing experiments in two 
 ### Supervised Learning Setting
 The implementation of Bi-LSTM and CRF utilized [IndoBERT](https://huggingface.co/indobenchmark/indobert-base-p1) to provide word embeddings. All experiments used batch size of 16. These are the results:
 |Maximum sequence length|Number of e-poch|Precision|Recall|F1 score|
+|-----------------------|----------------|---------|------|--------|
 |256|10|0.94|0.92|0.93|
 |512|10|0.92|0.92|0.92|
 
