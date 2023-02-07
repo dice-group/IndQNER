@@ -52,9 +52,10 @@ We found many named entity and class candidates during the annotation stage. To 
 We evaluated the annotation quality of IndQNER by performing experiments in two settings: supervised learning (Bi-LSTM+CRF) and transfer learning ([IndoBERT](https://huggingface.co/indobenchmark/indobert-base-p1) fine-tuning). 
 
 ### Supervised Learning Setting
-The implementation of Bi-LSTM and CRF utilized [IndoBERT](https://huggingface.co/indobenchmark/indobert-base-p1) to provide word embeddings. All experiments used batch size of 16. These are the results:
+The implementation of Bi-LSTM and CRF utilized [IndoBERT](https://huggingface.co/indobenchmark/indobert-base-p1) to provide word embeddings. All experiments used batch size of 8 (the first experiment) and 16 (the second and third experiments). These are the results:
 |Maximum sequence length|Number of e-poch|Precision|Recall|F1 score|
 |-----------------------|----------------|---------|------|--------|
+|25|10|0.96|0.93|0.94|
 |256|10|0.94|0.92|0.93|
 |512|10|0.92|0.92|0.92|
 
