@@ -96,9 +96,9 @@ def main():
     parser = argparse.ArgumentParser()
 
     ## Required parameters
-    parser.add_argument("--train_file", default="datasets/indQNER/train.txt", type=str)
-    parser.add_argument("--eval_file", default="datasets/indQNER/dev.txt", type=str)
-    parser.add_argument("--test_file", default="datasets/indQNER/test.txt", type=str)
+    parser.add_argument("--train_file", default="datasets/train.bio", type=str)
+    parser.add_argument("--eval_file", default="datasets/dev.bio", type=str)
+    parser.add_argument("--test_file", default="datasets/test.bio", type=str)
     parser.add_argument("--model_name_or_path", default="indobert-base-p1", type=str)
     parser.add_argument("--output_dir", default="models", type=str)
 
@@ -316,7 +316,7 @@ def main():
         # model.to(device)
         label_map = {i : label for i, label in enumerate(label_list)}
 
-        tokenizer = BertTokenizer.from_pretrained(args.output_dir, do_lower_case=args.do_lower_case, encoding="utf-8")
+        tokenizer = BertTokenizer.from_pretrained(args.output_dir, do_lower_case=args.do_lower_case)
         args = torch.load(os.path.join(args.output_dir, 'training_args.bin'))
         model = BERT_BiLSTM_CRF.from_pretrained(args.output_dir, need_birnn=args.need_birnn, rnn_dim=args.rnn_dim)
         model.to(device)
@@ -368,9 +368,10 @@ def main():
         conlleval.report(counts)
 
         overall, by_type = conlleval.metrics(counts)
-        f1_score = overall.fscore
-        print("f1 score", f1_score)
-                
+        f1_score = overall.fscore        
+        print("Precision", overall.prec)
+        print("Recall", overall.rec)
+        print("F1 score", f1_score)        
         
 if __name__ == "__main__":
     main()

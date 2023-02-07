@@ -43,12 +43,11 @@ class NerProcessor(object):
             for line in f.readlines():   
                 content = line.strip()
                 tokens = line.strip().split("\t")
-                
+
                 if len(tokens) == 2:
                     words.append(tokens[0])
                     labels.append(tokens[1])
                 else:
-                    
                     if len(content) == 0 and len(words) > 0:
                         label = []
                         word = []
@@ -57,10 +56,8 @@ class NerProcessor(object):
                                 label.append(l)
                                 word.append(w)
                         lines.append([' '.join(label), ' '.join(word)])
-                        #print(lines)
                         words = []
                         labels = []
-                    
             
             return lines
     
@@ -113,14 +110,9 @@ def convert_examples_to_features(args, examples, label_list, max_seq_length, tok
     for (ex_index, example) in tqdm(enumerate(examples), desc="convert examples"):
         # if ex_index % 10000 == 0:
         #     logger.info("Writing example %d of %d" % (ex_index, len(examples)))
-        #print(example.text)
-        #print(example.label)
-        textlist = example.text.strip().split(" ")
-        labellist = example.label.strip().split(" ")
-        #print(textlist)
-        #print(labellist)
-        #print(len(textlist))
-        #print(len(labellist))
+        
+        textlist = example.text.split(" ")
+        labellist = example.label.split(" ")
         assert len(textlist) == len(labellist)
         tokens = []
         labels = []
@@ -130,11 +122,7 @@ def convert_examples_to_features(args, examples, label_list, max_seq_length, tok
             # Prevent the wordPiece situation from appearing, but it doesn’t seem to be
             token = tokenizer.tokenize(word)
             ids = tokenizer.convert_tokens_to_ids(token)
-            #print("ids", ids)
-            #print(ids.shape)
             ids = np.average(ids)
-            if np.isnan(ids):
-                ids = np.zeros(1)
             input_ids.append(ids)
             tokens.append(token)
             label_1 = labellist[i]
@@ -217,10 +205,11 @@ def get_Dataset(args, processor, tokenizer, mode="train"):
 
     examples = processor.get_examples(filepath)
     label_list = args.label_list
-    print(label_list)
+
     features = convert_examples_to_features(
         args, examples, label_list, args.max_seq_length, tokenizer
     )
+
     all_input_ids = torch.tensor([f.input_ids for f in features], dtype=torch.long)
     all_input_mask = torch.tensor([f.input_mask for f in features], dtype=torch.long)
     all_segment_ids = torch.tensor([f.segment_ids for f in features], dtype=torch.long)
