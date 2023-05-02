@@ -79,6 +79,7 @@ We performed several experiments with different parameters in IndoBERT fine-tuni
 This dataset is also a part of [NusaCrowd project](https://github.com/IndoNLP/nusa-crowd) that aims to collect Natural Language Processing (NLP) datasets for the Indonesian languages.
 
 ##How to Cite
+```bibtex
 @inproceedings{gusmita2023indqner,
     title = "IndQNER: Named Entity Recognition Benchmark Dataset from the Indonesian Translation of The Quran",
     author = {Gusmita, Ria Hari  and Firmansyah, Asep Fajar and Moussallem, Diego and Ngonga Ngomo, Axel-Cyrille},
@@ -87,6 +88,7 @@ This dataset is also a part of [NusaCrowd project](https://github.com/IndoNLP/nu
     address = "Online",
     publisher = "Springer Link",
 }
+```
 
 ## Contact
 If you have any questions or feedbacks, feel free to contact us at ria.hari.gusmita@uni-paderborn.de or ria.gusmita@uinjkt.ac.id
