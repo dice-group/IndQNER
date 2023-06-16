@@ -82,13 +82,24 @@ This dataset is also a part of [NusaCrowd project](https://github.com/IndoNLP/nu
 
 ## How to Cite
 ```bibtex
-@inproceedings{gusmita2023indqner,
-    title = "IndQNER: Named Entity Recognition Benchmark Dataset from the Indonesian Translation of The Quran",
-    author = {Gusmita, Ria Hari  and Firmansyah, Asep Fajar and Moussallem, Diego and Ngonga Ngomo, Axel-Cyrille},
-    booktitle = "to appear in Proceedings of the 28th International Conference on Applications of Natural Language to Information Systems (NLDB 2023)",
-    year = "2023",
-    address = "Online",
-    publisher = "Springer Link",
+@InProceedings{10.1007/978-3-031-35320-8_12,
+author="Gusmita, Ria Hari
+and Firmansyah, Asep Fajar
+and Moussallem, Diego
+and Ngonga Ngomo, Axel-Cyrille",
+editor="M{\'e}tais, Elisabeth
+and Meziane, Farid
+and Sugumaran, Vijayan
+and Manning, Warren
+and Reiff-Marganiec, Stephan",
+title="IndQNER: Named Entity Recognition Benchmark Dataset from the Indonesian Translation of the Quran",
+booktitle="Natural Language Processing and Information Systems",
+year="2023",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="170--185",
+abstract="Indonesian is classified as underrepresented in the Natural Language Processing (NLP) field, despite being the tenth most spoken language in the world with 198 million speakers. The paucity of datasets is recognized as the main reason for the slow advancements in NLP research for underrepresented languages. Significant attempts were made in 2020 to address this drawback for Indonesian. The Indonesian Natural Language Understanding (IndoNLU) benchmark was introduced alongside IndoBERT pre-trained language model. The second benchmark, Indonesian Language Evaluation Montage (IndoLEM), was presented in the same year. These benchmarks support several tasks, including Named Entity Recognition (NER). However, all NER datasets are in the public domain and do not contain domain-specific datasets. To alleviate this drawback, we introduce IndQNER, a manually annotated NER benchmark dataset in the religious domain that adheres to a meticulously designed annotation guideline. Since Indonesia has the world's largest Muslim population, we build the dataset from the Indonesian translation of the Quran. The dataset includes 2475 named entities representing 18 different classes. To assess the annotation quality of IndQNER, we perform experiments with BiLSTM and CRF-based NER, as well as IndoBERT fine-tuning. The results reveal that the first model outperforms the second model achieving 0.98 F1 points. This outcome indicates that IndQNER may be an acceptable evaluation metric for Indonesian NER tasks in the aforementioned domain, widening the research's domain range.",
+isbn="978-3-031-35320-8"
 }
 ```
 
