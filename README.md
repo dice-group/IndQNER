@@ -1,14 +1,12 @@
 # IndQNER
-IndQNER is a Named Entity Recognition (NER) benchmark dataset that was created by manually annotating 8 chapters in the Indonesian translation of the Quran. 
-The annotation was performed using a web-based text annotation tool, [Tagtog](https://www.tagtog.com/), and the BIO (Beginning-Inside-Outside) tagging format. 
-The dataset contains:
+IndQNER is a Named Entity Recognition (NER) benchmark dataset that was created by manually annotating 8 chapters in the Indonesian translation of the Quran. The annotation was performed using a web-based text annotation tool, [Tagtog](https://www.tagtog.com/), and the BIO (Beginning-Inside-Outside) tagging format. The dataset contains:
 * 3117 sentences
 * 62027 tokens
 * 2475 named entities
 * 18 named entity categories
 
 ## Named Entity Classes
-The named entity classes were initially defined by analyzing the existing Quran concepts ontology. The initial classes were updated based on the information acquired during the annotation process. Finally, there are 20 classes as follows:
+The named entity classes were initially defined by analyzing the existing Quran concepts ontology. The initial classes were updated based on the information acquired during the annotation process. Finally, there are 20 classes, as follows:
 1. Allah
 2. Allah's Throne
 3. Artifact
@@ -31,7 +29,7 @@ The named entity classes were initially defined by analyzing the existing Quran 
 20. The book of Allah
 
 ## Annotation Stage
-There were eight annotators who contributed to the annotation process. They are Informatics Engineering students at the State Islamic University Syarif Hidayatullah Jakarta. 
+There were eight annotators who contributed to the annotation process. They were informatics engineering students at the State Islamic University Syarif Hidayatullah Jakarta. 
 1. Anggita Maharani Gumay Putri
 2. Muhammad Destamal Junas
 3. Naufaldi Hafidhigbal
@@ -51,7 +49,7 @@ We found many named entity and class candidates during the annotation stage. To 
 We evaluated the annotation quality of IndQNER by performing experiments in two settings: supervised learning (BiLSTM+CRF) and transfer learning ([IndoBERT](https://huggingface.co/indobenchmark/indobert-base-p1) fine-tuning). 
 
 ### Supervised Learning Setting
-The implementation of BiLSTM and CRF utilized [IndoBERT](https://huggingface.co/indobenchmark/indobert-base-p1) to provide word embeddings. All experiments used batch size of 16. These are the results:
+The implementation of BiLSTM and CRF utilized [IndoBERT](https://huggingface.co/indobenchmark/indobert-base-p1) to provide word embeddings. All experiments used a batch size of 16. These are the results:
 
 |Maximum sequence length|Number of e-poch|Precision|Recall|F1 score|
 |-----------------------|----------------|---------|------|--------|
@@ -65,7 +63,7 @@ The implementation of BiLSTM and CRF utilized [IndoBERT](https://huggingface.co/
 |	  512 		|       100      |   0.97  | 0.95 |  0.96  |
 
 ### Transfer Learning Setting
-We performed several experiments with different parameters in IndoBERT fine-tuning. All experiments used learning rate of 2e-5 and batch size of 16. These are the results:
+We performed several experiments with different parameters in IndoBERT fine-tuning. All experiments used a learning rate of 2e-5 and a batch size of 16. These are the results:
 
 |Maximum sequence length|Number of e-poch|Precision|Recall|F1 score|
 |-----------------------|----------------|---------|------|--------|
