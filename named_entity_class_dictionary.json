@@ -1,0 +1,53 @@
+{
+    "O": {
+        "en": "O"
+    },
+    "HolyBook": {
+        "en": "Holy book"
+    },
+    "Messenger": {
+        "en": "Messenger"
+    },
+    "Allah": {
+        "en": "Allah"
+    },
+    "Event": {
+        "en": "Event"
+    },
+    "AstronomicalBody": {
+        "en": "Astronomical body"
+    },
+    "Prophet": {
+        "en": "Prophet"
+    },
+    "Person": {
+        "en": "Person"
+    },
+    "Food": {
+        "en": "Food"
+    },
+    "GeographicalLocation": {
+        "en": "Geographical location"
+    },
+    "Color": {
+        "en": "Color"
+    },
+    "Angel": {
+        "en": "Angel"
+    },
+    "Artifact": {
+        "en": "Artifact"
+    },
+    "Religion": {
+        "en": "Religion"
+    },
+    "AfterlifeLocation": {
+        "en": "Afterlife location"
+    },
+    "Throne": {
+        "en": "Throne"
+    },
+    "Language": {
+        "en": "Language"
+    }
+}
