@@ -5,7 +5,7 @@ from tqdm import tqdm
 import json
 import ast
 # Initialize OpenAI client
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="<OpenAI secret key")
 
 def query_llm(prompt):
     """
